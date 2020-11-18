@@ -1,0 +1,27 @@
+
+# ==================== Emojis ====================
+# 🐛  :bug: バグ修正（Bagfix）
+# 👍  :+1: 機能改善
+# ✨  :sparkles: 部分的な機能追加
+# 🎨  :art: デザインUI/UX(Accessibility)
+# 🎉  :tada: 盛大に祝うべき大きな機能追加 / 初めてのコミット（Initial Commit）
+# ♻️   :recycle: リファクタリング(Refactoring)
+# 🚿  :shower: 不要な機能・使われなくなった機能の削除
+# 💚  :green_heart: テストやCIの修正・改善
+# 👕  :shirt: Lintエラーの修正やコードスタイルの修正
+# 🚀  :rocket: パフォーマンス改善（Performance）
+# 🆙  :up: 依存パッケージなどのアップデート
+# 🔒  :lock: 新機能の公開範囲の制限
+# 👮  :cop: セキュリティ関連の改善
+# 🔖  :bookmark: バージョンタグ（Version Tag）
+# 📚  :books: ドキュメント（Documentation）
+# 🔧  :wrench: ツール（Tooling）
+# 🚨  :rotating_light: テスト（Tests）
+# 💩  :hankey: 非推奨追加（Deprecation）
+# 🗑️  :wastebasket: 削除（Removal）
+# 🚧  :construction: WIP(Work In Progress)
+
+# ==================== Format ====================
+# :emoji: Subject
+#
+# Commit body...
