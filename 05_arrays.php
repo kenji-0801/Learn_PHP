@@ -104,10 +104,67 @@ var_dump($evens);
 echo '</pre>';
 
 
-$squares = array_map(fn($n) => $n + 1, $numbers);
+// $squares = array_map(fn($n) => $n + 1, $numbers);
 echo '<pre>';
 var_dump($squares);
 echo '</pre>';
 
-$sum = array_reduce($numbers, fn($carry, $item) => $carry + $item);
+// $sum = array_reduce($numbers, fn($carry, $item) => $carry + $item);
 echo $sum.'<br>';
+
+// ============================================
+// Associative arrays / 連想配列
+// ============================================
+
+// 連想配列の作成する
+// Create an associative array
+$person = [
+  'name' => 'Brad',
+  'surname' => 'Traversy',
+  'age' => 30,
+  'hobbies' => ['Tennis', 'Video Games'],
+];
+
+// Keyによる値の取得する
+// Get element by key
+echo $person['name'].'<br>';
+
+// Keyによる値の代入する
+// Set element by key
+$person['channel'] = 'TraversyMedia';
+
+// Keyで指定した値が存在するか確認する
+// Check if array has specific key
+echo '<pre>';
+var_dump(isset($person['age']));  // Change age into "location"
+echo '</pre>';
+
+// 配列のKeyを表示する
+// Print the keys of the array
+echo '<pre>';
+var_dump(array_keys($person));
+echo '</pre>';
+
+// 配列の値を表示する
+// Print the values of the array
+echo '<pre>';
+var_dump(array_values($person));
+echo '</pre>';
+
+// Key,値による連想配列のソート
+// Sorting associative arrays by values, by keys
+ksort($person); // ksort, krsort, asort, arsort
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
+
+// 二次元配列
+// Two dimensional arrays
+$todoItems = [
+  ['title' => 'Todo1', 'completed' => true],
+  ['title' => 'Todo 2', 'completed' => false],
+];
+
+echo '<pre>';
+var_dump($todoItems);
+echo '</pre>';
