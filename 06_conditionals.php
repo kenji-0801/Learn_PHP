@@ -45,3 +45,45 @@ if ($age < 22 && $salary >= 500000) {
 } elseif ($age > 60 && $salary < 500000) {
   echo 'You are old and NOT rich also<br>';
 }
+
+// 7. Ternary if / 条件演算子
+echo $age < 22 ? 'Young' : 'Old';
+echo '<br>';
+
+// 7.1 Nested ternary / 三項演算子
+echo $age < 22 ? ($age < 16 ? 'Too young' : 'Young') : 'Old';
+echo '<br>';
+// 7.2 Short ternary / 糖衣構文
+$myAge = $age ?: 18; // Equivalent of "$age ? $age : 18"
+
+// 8. Null coalescing operator
+$var = isset($name) ? $name : 'John';
+$var = $name ?? 'John'; // Equivalent of above
+echo $var.'<br>';
+
+// 9. Null coalescing assignment operator. Since PHP 7.4
+$person = [
+    'name' => 'John' // 9.1 Comment this line
+];
+if (!isset($person['name'])){
+    $person['name'] = 'Anonymous';
+}
+$person['name'] ?? 'Anonymous';
+echo $person['name'].'<br>';
+
+// 10. switch
+$userRole = 'admin'; // admin, editor, user
+
+switch ($userRole) {
+    case 'admin':
+        echo 'You can do anything<br>';
+        break;
+    case 'editor';
+        echo 'You can edit content<br>';
+        break;
+    case 'user':
+        echo 'You can view posts and comment<br>';
+        break;
+    default:
+        echo 'Unknown role<br>';
+}
